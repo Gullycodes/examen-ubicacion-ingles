@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Examen de Ubicación de Inglés</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #2a2a2a;
+        }
+        p {
+            max-width: 800px;
+            margin: 0 auto 20px auto;
+            line-height: 1.4;
+        }
+        fieldset {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        legend {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        label {
+            display: block;
+            margin: 5px 0;
+        }
+        button {
+            display: block;
+            margin: 30px auto;
+            padding: 12px 24px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .feedback {
+            margin-top: 8px;
+            font-style: italic;
+        }
+        .student-info {
+            margin-bottom: 20px;
+        }
+        .student-info label {
+            margin-top: 10px;
+            display: block;
+        }
+        .student-info input {
+            width: 100%;
+            padding: 6px;
+            margin-top: 4px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>Examen de Ubicación de Inglés</h1>
+    <p>
+        Responde las siguientes 25 preguntas seleccionando la respuesta correcta. Al finalizar,
+        haz clic en "Enviar" para conocer tu puntuación total y el nivel aproximado según el
+        Marco Común Europeo de Referencia (A1–C2).
+    </p>
+    <!-- Datos del estudiante -->
+    <fieldset class="student-info">
+        <legend>Datos del estudiante</legend>
+        <label>Nombre:
+            <input type="text" id="studentName" placeholder="Tu nombre" />
+        </label>
+        <label>Email:
+            <input type="email" id="studentEmail" placeholder="tu@email.com" />
+        </label>
+    </fieldset>
+    <form id="quizForm">
+        <!-- Preguntas de gramática -->
+        <fieldset>
+            <legend>1. Elige la oración correcta:</legend>
+            <label><input type="radio" name="q1" value="0"> She don't like coffee.</label>
+            <label><input type="radio" name="q1" value="0"> She doesn't likes coffee.</label>
+            <label><input type="radio" name="q1" value="1"> She doesn't like coffee.</label>
+        </fieldset>
+        <fieldset>
+            <legend>2. ¿Cuál es el pasado simple de "go"?</legend>
+            <label><input type="radio" name="q2" value="0"> goed</label>
+            <label><input type="radio" name="q2" value="1"> went</label>
+            <label><input type="radio" name="q2" value="0"> gone</label>
+            <label><input type="radio" name="q2" value="0"> going</label>
+        </fieldset>
+        <fieldset>
+            <legend>3. Completa la frase: I ______ to the market yesterday.</legend>
+            <label><input type="radio" name="q3" value="0"> go</label>
+            <label><input type="radio" name="q3" value="0"> going</label>
+            <label><input type="radio" name="q3" value="1"> went</label>
+            <label><input type="radio" name="q3" value="0"> gone</label>
+        </fieldset>
+        <fieldset>
+            <legend>4. Elige la oración con el comparativo correcto:</legend>
+            <label><input type="radio" name="q4" value="1"> This book is more interesting than that one.</label>
+            <label><input type="radio" name="q4" value="0"> This book is interestinger than that one.</label>
+            <label><input type="radio" name="q4" value="0"> This book is most interesting than that one.</label>
+        </fieldset>
+        <fieldset>
+            <legend>5. Completa la frase: There isn't ______ milk left.</legend>
+            <label><input type="radio" name="q5" value="0"> some</label>
+            <label><input type="radio" name="q5" value="1"> any</label>
+            <label><input type="radio" name="q5" value="0"> many</label>
+            <label><input type="radio" name="q5" value="0"> a</label>
+        </fieldset>
+        <fieldset>
+            <legend>6. Elige el superlativo correcto:</legend>
+            <label><input type="radio" name="q6" value="0"> She is the taller of her sisters.</label>
+            <label><input type="radio" name="q6" value="1"> She is the tallest of her sisters.</label>
+            <label><input type="radio" name="q6" value="0"> She is the most tall of her sisters.</label>
+            <label><input type="radio" name="q6" value="0"> She is taller as her sisters.</label>
+        </fieldset>
+        <fieldset>
+            <legend>7. ¿Cuál oración está en presente continuo?</legend>
+            <label><input type="radio" name="q7" value="0"> They play tennis every weekend.</label>
+            <label><input type="radio" name="q7" value="1"> They are playing tennis right now.</label>
+            <label><input type="radio" name="q7" value="0"> They played tennis yesterday.</label>
+            <label><input type="radio" name="q7" value="0"> They have played tennis.</label>
+        </fieldset>
+        <fieldset>
+            <legend>8. Completa la frase: I have lived in London ______ three years.</legend>
+            <label><input type="radio" name="q8" value="0"> since</label>
+            <label><input type="radio" name="q8" value="1"> for</label>
+            <label><input type="radio" name="q8" value="0"> during</label>
+            <label><input type="radio" name="q8" value="0"> by</label>
+        </fieldset>
+        <fieldset>
+            <legend>9. Elige el orden correcto de las palabras:</legend>
+            <label><input type="radio" name="q9" value="0"> Always she arrives on time.</label>
+            <label><input type="radio" name="q9" value="1"> She always arrives on time.</label>
+            <label><input type="radio" name="q9" value="0"> She arrives always on time.</label>
+            <label><input type="radio" name="q9" value="0"> She arrives on time always.</label>
+        </fieldset>
+        <fieldset>
+            <legend>10. Completa la frase: The cat is ______ the table.</legend>
+            <label><input type="radio" name="q10" value="0"> in</label>
+            <label><input type="radio" name="q10" value="1"> on</label>
+            <label><input type="radio" name="q10" value="0"> at</label>
+            <label><input type="radio" name="q10" value="0"> by</label>
+        </fieldset>
+
+        <!-- Preguntas de vocabulario -->
+        <fieldset>
+            <legend>11. Elige el sinónimo de "happy":</legend>
+            <label><input type="radio" name="q11" value="0"> sad</label>
+            <label><input type="radio" name="q11" value="0"> angry</label>
+            <label><input type="radio" name="q11" value="1"> joyful</label>
+            <label><input type="radio" name="q11" value="0"> tired</label>
+        </fieldset>
+        <fieldset>
+            <legend>12. Elige el antónimo de "cold":</legend>
+            <label><input type="radio" name="q12" value="1"> hot</label>
+            <label><input type="radio" name="q12" value="0"> cool</label>
+            <label><input type="radio" name="q12" value="0"> warm</label>
+            <label><input type="radio" name="q12" value="0"> freezing</label>
+        </fieldset>
+        <fieldset>
+            <legend>13. Completa la frase: "Please ______ your homework before class."</legend>
+            <label><input type="radio" name="q13" value="1"> do</label>
+            <label><input type="radio" name="q13" value="0"> make</label>
+            <label><input type="radio" name="q13" value="0"> take</label>
+            <label><input type="radio" name="q13" value="0"> have</label>
+        </fieldset>
+        <fieldset>
+            <legend>14. Completa la frase: "I'm ______ porque no dormí bien."</legend>
+            <label><input type="radio" name="q14" value="0"> hungry</label>
+            <label><input type="radio" name="q14" value="1"> tired</label>
+            <label><input type="radio" name="q14" value="0"> funny</label>
+            <label><input type="radio" name="q14" value="0"> thirsty</label>
+        </fieldset>
+        <fieldset>
+            <legend>15. Completa la frase: "Could you ______ me with my bags?"</legend>
+            <label><input type="radio" name="q15" value="1"> help</label>
+            <label><input type="radio" name="q15" value="0"> hold</label>
+            <label><input type="radio" name="q15" value="0"> stop</label>
+            <label><input type="radio" name="q15" value="0"> give</label>
+        </fieldset>
+
+        <!-- Comprensión de lectura -->
+        <fieldset>
+            <legend>Texto para las preguntas 16–20:</legend>
+            <p>
+                Lee el siguiente texto y responde las preguntas.<br><br>
+                "Anna loves to read books. Every evening, she sits in her comfortable chair and reads
+                stories about faraway places. Sometimes, she reads for hours until she falls asleep. Her
+                favorite books are about adventures and mysteries."
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>16. ¿Qué le gusta hacer a Anna?</legend>
+            <label><input type="radio" name="q16" value="0"> cook</label>
+            <label><input type="radio" name="q16" value="0"> sleep</label>
+            <label><input type="radio" name="q16" value="1"> read books</label>
+            <label><input type="radio" name="q16" value="0"> travel</label>
+        </fieldset>
+        <fieldset>
+            <legend>17. ¿Cuándo suele leer?</legend>
+            <label><input type="radio" name="q17" value="0"> en la mañana</label>
+            <label><input type="radio" name="q17" value="0"> en la tarde</label>
+            <label><input type="radio" name="q17" value="1"> en la noche</label>
+            <label><input type="radio" name="q17" value="0"> al mediodía</label>
+        </fieldset>
+        <fieldset>
+            <legend>18. ¿Qué tipo de silla utiliza?</legend>
+            <label><input type="radio" name="q18" value="0"> incómoda</label>
+            <label><input type="radio" name="q18" value="0"> alta</label>
+            <label><input type="radio" name="q18" value="1"> cómoda</label>
+            <label><input type="radio" name="q18" value="0"> de madera</label>
+        </fieldset>
+        <fieldset>
+            <legend>19. ¿Cuánto tiempo a veces lee?</legend>
+            <label><input type="radio" name="q19" value="0"> por minutos</label>
+            <label><input type="radio" name="q19" value="1"> por horas</label>
+            <label><input type="radio" name="q19" value="0"> por días</label>
+            <label><input type="radio" name="q19" value="0"> nada</label>
+        </fieldset>
+        <fieldset>
+            <legend>20. ¿De qué tratan sus libros favoritos?</legend>
+            <label><input type="radio" name="q20" value="0"> comida</label>
+            <label><input type="radio" name="q20" value="1"> aventuras y misterios</label>
+            <label><input type="radio" name="q20" value="0"> animales</label>
+            <label><input type="radio" name="q20" value="0"> ciencia</label>
+        </fieldset>
+
+        <!-- Preguntas adicionales de gramática / uso -->
+        <fieldset>
+            <legend>21. Completa la frase en pasado perfecto: I ______ my keys before I left.</legend>
+            <label><input type="radio" name="q21" value="0"> lost</label>
+            <label><input type="radio" name="q21" value="1"> had lost</label>
+            <label><input type="radio" name="q21" value="0"> have lost</label>
+            <label><input type="radio" name="q21" value="0"> was losing</label>
+        </fieldset>
+        <fieldset>
+            <legend>22. Completa la frase: He ______ you tomorrow.</legend>
+            <label><input type="radio" name="q22" value="0"> call</label>
+            <label><input type="radio" name="q22" value="0"> calls</label>
+            <label><input type="radio" name="q22" value="1"> will call</label>
+            <label><input type="radio" name="q22" value="0"> is calling</label>
+        </fieldset>
+        <fieldset>
+            <legend>23. Completa la frase: Can you give me ______ apple on the table?</legend>
+            <label><input type="radio" name="q23" value="0"> a</label>
+            <label><input type="radio" name="q23" value="1"> the</label>
+            <label><input type="radio" name="q23" value="0"> an</label>
+            <label><input type="radio" name="q23" value="0"> (sin artículo)</label>
+        </fieldset>
+        <fieldset>
+            <legend>24. Completa la pregunta: ______ you like some tea?</legend>
+            <label><input type="radio" name="q24" value="0"> Do</label>
+            <label><input type="radio" name="q24" value="0"> Are</label>
+            <label><input type="radio" name="q24" value="1"> Would</label>
+            <label><input type="radio" name="q24" value="0"> Did</label>
+        </fieldset>
+        <fieldset>
+            <legend>25. Completa la pregunta: ____ is going to the store?</legend>
+            <label><input type="radio" name="q25" value="1"> Who</label>
+            <label><input type="radio" name="q25" value="0"> What</label>
+            <label><input type="radio" name="q25" value="0"> Which</label>
+            <label><input type="radio" name="q25" value="0"> Whose</label>
+        </fieldset>
+    </form>
+    <button type="button" onclick="calculateScore()">Enviar</button>
+    <div id="result"></div>
+    <script>
+        // Objeto que mapea el número de pregunta a la respuesta correcta (texto) para feedback
+        var correctAnswers = {
+            1: "She doesn't like coffee.",
+            2: "went",
+            3: "went",
+            4: "This book is more interesting than that one.",
+            5: "any",
+            6: "She is the tallest of her sisters.",
+            7: "They are playing tennis right now.",
+            8: "for",
+            9: "She always arrives on time.",
+            10: "on",
+            11: "joyful",
+            12: "hot",
+            13: "do",
+            14: "tired",
+            15: "help",
+            16: "read books",
+            17: "en la noche",
+            18: "cómoda",
+            19: "por horas",
+            20: "aventuras y misterios",
+            21: "had lost",
+            22: "will call",
+            23: "the",
+            24: "Would",
+            25: "Who"
+        };
+
+        // Dirección del Web App de Google Apps Script.
+        // Sustituye la URL de ejemplo por la tuya (ejemplo: https://script.google.com/macros/s/XYZ/exec).
+        const WEBAPP_URL = "https://script.google.com/macros/s/AKfycbwTjKcNQftDiqGPVq5Vwht_xsYc26y7ubot33-SrHKfBfDjtqJqHjDv8TALbAy3Vz831g/exec";
+
+        // Función para enviar los resultados al Web App (envía JSON por POST).
+        async function notifyTeacher(payload) {
+            if (!WEBAPP_URL) {
+                console.warn('WEBAPP_URL no está configurada. No se enviarán resultados.');
+                return;
+            }
+            try {
+                await fetch(WEBAPP_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload),
+                    mode: 'no-cors'
+                });
+            } catch (err) {
+                console.warn('Error al notificar al profesor:', err);
+            }
+        }
+
+        // Crear automáticamente contenedores de feedback para cada pregunta
+        (function createFeedbackContainers() {
+            var form = document.getElementById('quizForm');
+            var fieldsets = form.getElementsByTagName('fieldset');
+            var questionNumber = 1;
+            for (var i = 0; i < fieldsets.length; i++) {
+                var fs = fieldsets[i];
+                // Solo crear feedback si el fieldset contiene radios (es una pregunta)
+                if (fs.querySelector('input[type=\"radio\"]')) {
+                    var div = document.createElement('div');
+                    div.className = 'feedback';
+                    div.id = 'feedback-q' + questionNumber;
+                    fs.appendChild(div);
+                    questionNumber++;
+                }
+            }
+        })();
+
+        function calculateScore() {
+            var form = document.getElementById('quizForm');
+            var score = 0;
+            var summaryLines = [];
+            // Recorrer las 25 preguntas y sumar los valores seleccionados
+            for (var i = 1; i <= 25; i++) {
+                var options = form['q' + i];
+                var answered = false;
+                var correct = false;
+                var selectedText = '';
+                if (!options) continue;
+                if (options.length === undefined) {
+                    if (options.checked) {
+                        answered = true;
+                        selectedText = options.parentNode.textContent.trim();
+                        correct = parseInt(options.value, 10) === 1;
+                        if (correct) score += 1;
+                    }
+                } else {
+                    for (var j = 0; j < options.length; j++) {
+                        if (options[j].checked) {
+                            answered = true;
+                            selectedText = options[j].parentNode.textContent.trim();
+                            correct = parseInt(options[j].value, 10) === 1;
+                            if (correct) score += 1;
+                            break;
+                        }
+                    }
+                }
+                // Mostrar feedback individual
+                var feedbackDiv = document.getElementById('feedback-q' + i);
+                if (feedbackDiv) {
+                    if (!answered) {
+                        feedbackDiv.innerHTML = '<span style="color: orange;">⚠ Sin respuesta. Respuesta correcta: ' + correctAnswers[i] + '</span>';
+                    } else if (correct) {
+                        feedbackDiv.innerHTML = '<span style="color: green;">✔ Correcto</span>';
+                    } else {
+                        feedbackDiv.innerHTML = '<span style="color: red;">✘ Incorrecto. Respuesta correcta: ' + correctAnswers[i] + '</span>';
+                    }
+                }
+                // Construir resumen para el correo
+                if (!answered) {
+                    summaryLines.push('P' + i + ': sin respuesta (correcta: ' + correctAnswers[i] + ')');
+                } else if (correct) {
+                    summaryLines.push('P' + i + ': correcta');
+                } else {
+                    summaryLines.push('P' + i + ': incorrecta (correcta: ' + correctAnswers[i] + ')');
+                }
+            }
+            // Determinar el nivel según la puntuación
+            var level = '';
+            if (score <= 9) {
+                level = 'A1 (Beginner)';
+            } else if (score <= 14) {
+                level = 'A2 (Elementary)';
+            } else if (score <= 19) {
+                level = 'B1 (Intermediate)';
+            } else if (score <= 22) {
+                level = 'B2 (Upper Intermediate)';
+            } else if (score <= 24) {
+                level = 'C1 (Advanced)';
+            } else {
+                level = 'C2 (Proficient)';
+            }
+            // Mostrar resultado en pantalla
+            document.getElementById('result').textContent =
+                'Tu puntuación: ' + score + ' / 25. Nivel estimado: ' + level;
+            // Preparar y enviar notificación al profesor
+            var studentName = document.getElementById('studentName') ? document.getElementById('studentName').value.trim() : '';
+            var studentEmail = document.getElementById('studentEmail') ? document.getElementById('studentEmail').value.trim() : '';
+            var payload = {
+                studentName: studentName,
+                studentEmail: studentEmail,
+                score: score,
+                max: 25,
+                level: level,
+                summary: summaryLines.join('\n')
+            };
+            notifyTeacher(payload);
+        }
+    </script>
+</body>
+</html>
